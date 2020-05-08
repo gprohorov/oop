@@ -2,33 +2,18 @@ package pro.edu;
 
 public class Student {
 
-    private String name;
-    private int age;
+       private Person person;
+       private String group;
+       private String department;
+       private String chair;
 
-    public Student(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Student() {
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-
-        if (age >= 16) {
-            this.age = age;
-        } else {
-            System.out.println("Incorrect age");
-            this.age=0;
-        }
+    public Student(Person person, String group, String department, String chair) {
+        this.person = person;
+        this.group = group;
+        this.department = department;
+        this.chair = chair;
     }
 }

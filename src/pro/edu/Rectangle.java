@@ -22,6 +22,7 @@ public class Rectangle {
     public Rectangle(int length, int widhts) {
         this.length = length;
         this.widths = widhts;
+
     }
 
     public int getLength() {
@@ -45,6 +46,10 @@ public class Rectangle {
 
     public int getArea(){
         return  this.getLength() * this.getWidths();
+    }
+
+    public static int getArea(int length, int widhts){
+        return  length * widhts;
     }
 
     public  int getPerimeter(){
