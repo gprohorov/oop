@@ -13,6 +13,11 @@ public class Person {
     public Person() {
     }
 
+    // TODO:
+    public Boolean isAdult(){
+        return null;
+    }
+
     public String getFirstName() {
         return firstName;
     }
